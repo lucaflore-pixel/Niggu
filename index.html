@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <title>Dominik Dietrich – Der Mann, der Mythos, die Legende</title>
+  <style>
+    body {
+      background-image: url("poppy-1346086_1920.jpg");
+      font-family: "MS Sans Serif", Arial, sans-serif;
+      margin: 0;
+      padding: 20px;
+    }
+
+    .window {
+      background: #c0c0c0;
+      border: 2px solid #000;
+      box-shadow: 2px 2px #808080;
+      width: 600px;
+      margin: 0 auto;
+    }
+
+    .title-bar {
+      background: #000080;
+      color: #fff;
+      padding: 4px;
+      font-weight: bold;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .title-bar button {
+      background: #c0c0c0;
+      border: 1px solid #000;
+      width: 20px;
+      height: 20px;
+      margin-left: 2px;
+      cursor: pointer;
+    }
+
+    .content {
+      padding: 10px;
+      font-size: 14px;
+      color: #000;
+    }
+
+    h2 {
+      margin-top: 0;
+      border-bottom: 2px solid #000;
+      font-size: 16px;
+    }
+
+    ul {
+      list-style-type: square;
+      padding-left: 20px;
+    }
+
+    .footer {
+      background: #c0c0c0;
+      border-top: 2px solid #808080;
+      padding: 5px;
+      text-align: center;
+      font-size: 12px;
+    }
+
+    .blink {
+      color: red;
+      font-weight: bold;
+    }
+
+    .animoticon {
+      font-size: 20px;
+      margin: 10px;
+    }
+
+    marquee {
+      background: #000080;
+      color: yellow;
+      font-weight: bold;
+      padding: 5px;
+      margin-top: 10px;
+    }
+
+.carousel {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: #c0c0c0;
+      border: 2px solid #000;
+      padding: 10px;
+      margin: 20px auto;
+      width: 450px;
+      position: relative;
+    }
+
+    .carousel-images {
+      width: 400px;
+      height: 200px;
+      overflow: hidden;
+      position: relative;
+    }
+
+    .carousel-images img {
+      width: 400px;
+      height: 200px;
+      position: absolute;
+      top: 0;
+      left: 400px;
+      opacity: 0;
+      transition: all 0.5s ease;
+    }
+
+    .carousel-images img.active {
+      left: 0;
+      opacity: 1;
+    }
+
+    .carousel button {
+      background: #c0c0c0;
+      border: 2px solid #000;
+      cursor: pointer;
+      font-size: 18px;
+      margin: 0 5px;
+      width: 40px;
+      height: 40px;
+    }
+
+  </style>
+</head>
+<body onload="startAnimoticons();">
+
+  <div class="window">
+    <div class="title-bar">
+      <span>The one and only: Dominik Dietrich</span>
+      <div>
+        <button onclick="alert('Minimiert!')">_</button>
+        <button onclick="alert('Maximiert!')">[]</button>
+        <button onclick="alert('Geschlossen!')">X</button>
+      </div>
+    </div>
+    <div class="content">
+      <h2>Persönliche Daten</h2>
+      <p>
+        Name: Dominik Amadeus Dietrich<br>
+        Geburtsdatum: 01.01. 15 vChr.<br>
+        Wirkungsstätte: Wiedlisbach, Schweiz
+      </p>
+
+      <h2>Berufserfahrung</h2>
+      <ul>
+        <li>2000–2005: Fusball Legende</li>
+        <li>2019–2025: Hard Rocker (Töffli) bei Cholbefrässer Recherswil</li>
+        <li>2016–2025: Senior Consultant und CEO bei LaueriCheib GmbH</li>
+      </ul>
+
+      <h2>Ausbildung</h2>
+      <ul>
+        <li>1995–1999: Dubeli-Gymmer</li>
+        <li>2000: Zertifikat „Unfug“</li>
+        <li>2018-2025: Depressionen</li>
+      </ul>
+
+      <h2>Skills (Hard und Soft :P)</h2>
+      <ul>
+        <li>Meme (MaiMai) Meister</li>
+        <li>Faulenzen</li>
+        <li>Grätschen die ihres gleichen suchen</li>
+      </ul>
+
+      <h2 class="blink" id="blinkText">*** Willkommen auf meiner Seite xD ***</h2>
+
+      <div class="animoticon" id="animoticon1">(>^_^)> </div>
+      <div class="animoticon" id="animoticon2"><(^_^<)</div>
+
+      <marquee behavior="scroll" direction="left">🚧 Diese Seite ist noch UNDER CONSTRUCTION 🚧</marquee>
+
+      <!-- Neuer Abschnitt -->
+      <h2>Was ich mache</h2>
+      <p>
+        ⚽ <b>Fußballfan & Profi:</b> Dominik ist nicht nur Fan, sondern auch 
+        <i>professioneller Spieler beim legendären FC Wiedlisbach</i>. 
+        Seine Spezialität: Grätschen so präzise wie ein Windows-98-Druckertreiber – 
+        manchmal funktioniert’s, manchmal nicht.<br><br>
+
+        😂 <b>Memes aka „Maimais“:</b> Er lebt für Memes. Wenn andere Leute 
+        PowerPoint öffnen, startet Dominik lieber ein Meme-Slide. 
+        Sein Motto: „Ein Tag ohne Maimai ist wie ein Tag ohne Internet Explorer – 
+        irgendwie sinnlos.“<br><br>
+
+        🔨 <b>Geborener Heimwerker:</b> Ob Regal, Tisch oder ein selbstgebauter 
+        Fußballtorrahmen – Dominik ist der MacGyver von WB. 
+        Manchmal hält es länger als gedacht, manchmal nur bis zum nächsten 
+        Torjubel. Aber hey, Improvisation ist auch eine Kunst!
+      </p>
+
+            <!-- Neuer Abschnitt -->
+      <h2>Meine grössten Erfolge</h2>
+      <ul>
+        <li>🥇 Habe einmal ein Fußballspiel beim FC Wiedlisbach gewonnen. (Bank)</li>
+        <li>(¬‿¬) Weltrekord im „U-Boten“.</li>
+        <li>(╯°□°）╯ Vize-Weltmeister im weitwurf kleinwüchsiger Personen.</li>
+        <li>😂 Habe einen Maimai (Meme) erstellt, welches mega lustig war.</li>
+      </ul>
+
+      <div class="animoticon">(>O_o)> ✨</div>
+      <div class="animoticon">¯\_(ツ)_/¯</div>
+      <div class="animoticon">(☞ﾟヮﾟ)☞</div>
+
+      <!-- Neue Section: Bildergalerie -->
+      <h2>Impressionen:</h2>
+      <div class="carousel">
+        <button class="prev" onclick="prevSlide()">◀</button>
+        <div class="carousel-images">
+          <img src="WhatsApp Image 2025-12-09 at 20.40.11.jpeg" alt="">
+          <img src="WhatsApp Image 2025-12-09 at 20.41.00.jpeg" alt="">
+          <img src="WhatsApp Image 2025-12-09 at 20.41.23.jpeg" alt="">
+          <img src="WhatsApp Image 2025-12-09 at 20.44.50.jpeg" alt="">
+          <img src="WhatsApp Image 2025-12-09 at 20.44.61.jpeg" alt="">
+          <img src="WhatsApp Image 2025-12-09 at 20.45.03.jpeg" alt="">
+          <img src="WhatsApp Image 2025-12-09 at 20.50.14.jpeg" alt="">
+        </div>
+        <button class="next" onclick="nextSlide()">▶</button>
+      </div>
+
+    </div>
+    <div class="footer">
+      © 1998 Dominik Dietrich – Alle Rechte vorbehalten
+    </div>
+  </div>
+
+  <script>
+    // Blinking Text
+    setInterval(() => {
+      const blink = document.getElementById("blinkText");
+      blink.style.visibility = blink.style.visibility === "hidden" ? "visible" : "hidden";
+    }, 500);
+
+    // Animoticons bewegen sich
+    let pos1 = 0;
+    let pos2 = 50;
+    function startAnimoticons() {
+      setInterval(() => {
+        pos1 = (pos1 + 1) % 50;
+        pos2 = (pos2 - 1 + 50) % 50;
+        document.getElementById("animoticon1").style.marginLeft = pos1 + "px";
+        document.getElementById("animoticon2").style.marginLeft = pos2 + "px";
+      }, 100);
+    }
+
+    // Farbwechsel Hintergrund
+    const colors = ["#008080", "#800080", "#000080", "#808000", "#800000"];
+    let colorIndex = 0;
+    function startColorCycle() {
+      setInterval(() => {
+        document.body.style.background = colors[colorIndex];
+        colorIndex = (colorIndex + 1) % colors.length;
+      }, 2000);
+    }
+
+    // Sound abspielen
+    function playSound() {
+      const sound = document.getElementById("sound");
+      sound.autostart = true;
+      sound.play();
+      alert("Retro-Sound gestartet!");
+    }
+
+    // Begrüßung
+    alert("Willkommen auf der offiziellen Seite von Dominik Dietrich!");
+
+     let currentSlide = 0;
+    const slides = document.querySelectorAll(".carousel-images img");
+
+    function showSlide(index) {
+      slides.forEach((slide, i) => {
+        slide.classList.remove("active");
+        if (i === index) {
+          slide.classList.add("active");
+        }
+      });
+    }
+
+    function nextSlide() {
+      currentSlide = (currentSlide + 1) % slides.length;
+      showSlide(currentSlide);
+    }
+
+    function prevSlide() {
+      currentSlide = (currentSlide - 1 + slides.length) % slides.length;
+      showSlide(currentSlide);
+    }
+
+    // Automatisches Durchlaufen alle 3 Sekunden
+    setInterval(nextSlide, 3000);
+
+    // Initial anzeigen
+    showSlide(currentSlide);
+  </script>
+</body>
+</html>
